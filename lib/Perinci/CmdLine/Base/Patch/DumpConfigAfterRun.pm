@@ -1,4 +1,4 @@
-package Perinci::CmdLine::Base::Patch::DumpAndExit;
+package Perinci::CmdLine::Base::Patch::DumpConfigAfterRun;
 
 # DATE
 # VERSION
@@ -23,7 +23,7 @@ sub patch_data {
                 code        => sub {
                     my $ctx = shift;
 
-                    my ($self, $r) = @_;
+                    my ($self) = @_;
 
                     {
                         local $self->{exit} = 0;
@@ -56,7 +56,7 @@ sub patch_data {
 
 =head1 SYNOPSIS
 
- % PERL5OPT=-MPerinci::CmdLine::Base::Patch::DumpConfig yourscript.pl ...
+ % PERL5OPT=-MPerinci::CmdLine::Base::Patch::DumpConfigAfterRun yourscript.pl ...
 
 
 =head1 DESCRIPTION
